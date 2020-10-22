@@ -1,0 +1,39 @@
+<!doctype html><html><head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title>Testing</title> 
+  <script type="text/javascript"> 
+            function init() //start of loop
+            {
+              cookies = 0;
+              setInterval(cookiesLoop, 1000);
+            }
+            
+            function cookiesLoop() //adding 1 cookie every second
+            {
+              cookies++;
+              document.getElementById("counter").
+              childNodes[0].nodeValue = "You have " + cookies + " cookies";
+            }
+            function eatAll() //eating all cookies
+            {
+              eated = cookies                                           
+              document.getElementById("counterEat").
+              childNodes[0].nodeValue = "You ate " + eated + " cookies"
+              cookies = 0
+            }
+        </script> 
+ <style type="text/css" id="dcoder_stylesheet">p.title{
+  font-size: x-large;
+  text-align: center;
+}</style></head> 
+ <body onload="init()"> 
+  <p class="title">Some testiiing...</p> 
+  <div id="counter">
+    You have 0 cookies 
+  </div> 
+  <button onclick="eatAll()">Eat all cookies</button> 
+  <div id="counterEat">
+    You ate 0 cookies 
+  </div> 
+ 
+</body></html>
