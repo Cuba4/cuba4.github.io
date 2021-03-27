@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+  background: #7f8c8d;
+}
+.login{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #2c3e50;
+  text-align: center;
+}
+.login h1{
+  font-family: "Lexend", sans-serif;
+  color: #2980b9;
+}
+.login input[type = "text"],.login input[type = "password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2980b9;
+  border-radius: 14px;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #ecf0f1;
+  transition: 0.25s;
+}
+
+.login input[type = "text"]:focus,.login input[type = "password"]:focus{
+  width: 280px;
+  border-color: cyan;
+}
+
+.login input[type = "submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2980b9;
+  border-radius: 14px;
+  padding: 10px 45px;
+  outline: none;
+  color: #ecf0f1;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.login input[type = "submit"]:hover{
+  background-color: #2992f6;
+  padding: 14px 70px;
+}
